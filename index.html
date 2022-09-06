@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>
+		Portfólio Luize Peres Ferreira
+	</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Luize Ferreira - luize.pferreira@gmail.com">
+	<meta name="description" content="Currículo - história - contato - experiência">
+	<meta name="keywords" content="Currículo, curriculo, portfolio">
+	<link rel="shortcut icon" href="img/icon.ico">
+	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main class="geral">
+
+
+		<nav class="menu navbar">
+			<ul>
+				<li><a href="#apresentacao">Sobre mim</a></li>
+				<li><a href="#conteudo2">Formação Educacional</a></li>
+				<li><a href="#conteudo3">Portfólio</a></li>
+				<li><a href="#conteudo4">Contato</a></li>
+
+			</ul>
+		</nav>
+
+		<section>
+			<section class="apresentacao" id="apresentacao">
+				<aside class="caixaapresentacao">
+					<h2 class="subtitulo"> Resumo </h2>
+					<p class="resumo">
+						Sou estudante da área da tecnologia da informação.
+						Estou no 4º semestre de Análise e Desenvolvimento de Sistemas e cada vez mais estou me
+						aprofundanado
+						na área, com foco em FrontEnd.</p>
+					<p class="resumo">
+						Desde criança, sempre fui muito curiosa, principalmente com a tecnologia. Tive sempre muito
+						incentivo da minha família, pois a maioria pertence à esse ramo.</p>
+
+					<p class="resumo">
+						Gosto muito do que eu faço e quero aprender muito além.</p>
+					<br>
+					<br>
+					<ul class="topic">
+						<br>
+						<li>19 anos</li>
+						<li>Gravataí/RS (Brasil)</li>
+						<li>Amo patinar</li>
+						<li>Amo fazer doces</li>
+					</ul>
+				</aside>
+				<figure class="foto">
+					<img src="img/picture.jpg" alt="FotoPerfil">
+				</figure>
+
+			</section>
+
+			<div class="conteudo2" id="conteudo2">
+				<h2 class="educacao"> Formação Educacional </h2>
+				<br><br><br>
+				<ul class="formacao">
+					<li>Ensino Médio Completo - Colégio Cenecista Nossa Senhora dos Anjos (2018-2020)</li>
+					<li>Ensino Superior em andamento - UNINTER (2021-Atual)</li>
+					<li>Curso de Programação - Fundação Bradesco (Março - Dezembro/2022)</li>
+				</ul>
+				<br><br><br><br><br><br><br><br><br><br>
+				<h2 class="idiomas"> Idiomas </h2>
+				<br><br><br>
+				<ul class="linguas">
+					<li>Inglês - Básico</li>
+					<li>Espanhol - Básico</li>
+					<li>Português - Nativo</li>
+				</ul>
+			</div>
+
+
+			<section class="conteudo3" id="conteudo3">
+				<h2 class="portfolio"> Portfólio </h2>
+				<p class="paragrafo2">Experiências Profissionais</p>
+				<ul class="port">
+					<li>Estagiária na Prefeitura Municipal de Gravataí (10/2020 - 12/2020)</li>
+					<li>Auxiliar Administrativa na empresa Habilitar Treinamento e Consultoria (12/2020 - 05/2021)</li>
+					<li>Estagiária de suporte na empresa MegaInffo (08/2021 - 03/2022)</li>
+				</ul>
+			</section>
+
+			<section class="conteudo4" id="conteudo4">
+				<h2 class="contato"> Contato </h2>
+				<form class="contac_form" id="forms">
+					<p class="paragrafo">Entre em contato:</p>
+
+					<input type="hidden" name="accessKey" value="10da5604-9ffb-49f1-af6b-c56e8efb5b5c">
+
+					<input class="name" data-langkey="nome" type="text" class="inpTxt" id="strNome" name="name"
+						placeholder="Nome completo">
+					<br>
+					<br>
+					<input class="email" data-langkey="e-mail" type="text" class="inpTxt" id="strNome" name="email"
+						placeholder="E-mail">
+					<br>
+					<br>
+					<input class="subject" data-langkey="assunto" type="text" class="inpTxt" id="strAssunto"
+						name="subject" placeholder="Assunto">
+					<br>
+					<br>
+					<textarea class="message" name="message" placeholder="Mensagem" rows="5" cols="33"></textarea>
+					<p></p>
+					<button class="enviar" onclick="sendMsg()">Enviar</button>
+					<!-- <input class="enviar" type="submit" value="enviar"> -->
+				</form>
+				<script src="https://smtpjs.com/v3/smtp.js"></script>
+				<script>
+					const form = document.querySelector('.contact_form');
+					//Função para enviar mensagem quando clicar no botão:
+					function sendMsg() {
+						// e.preventDefault();
+
+						const name = document.querySelector('.name');
+						email = document.querySelector('.email');
+						subject = document.querySelector('.subject');
+						message = document.querySelector('.message');
+
+						
+						alert(`Sua mensagem foi enviada`);
+						// // Função enviar email:
+						// Email.send({
+						// 	SecureToken: "365f57ab-fc36-4877-920d-d7283cb34e28",
+						// 	To: 'luize.pferreira@gmail.com',
+						// 	From: email.value,
+						// 	Subject: "Contact Form",
+						// 	Body: message.value
+						// }).then(
+						// 	message => alert(message)
+						// );
+					}
+
+					// Adicionar o evento submit:
+					from.addEventListener('submit', sendMsg);
+
+				</script>
+				<table>
+					<tr>
+						<td>
+							<a href="https://github.com/luizepferreira" target="_blank"><img class="git"
+									src="img/github.png" alt="Ícone Github"></a>
+						</td>
+						<td>
+							<a href="https://linkedin.com/in/luizepferreira" target="_blank"><img class="linke"
+									src="img/linkedin.png" alt="Ícone Linkedin"></a>
+						</td>
+					</tr>
+
+				</table>
+
+
+			</section>
+		</section>
+
+		<footer class="rodape">
+
+			<p>
+				&copy 2022 <span>Luize</span> Ferreira
+			</p>
+
+		</footer>
+	</main>
+</body>
+
+</html>
