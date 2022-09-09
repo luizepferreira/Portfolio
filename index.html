@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!--Cabeçalho contendo as informções da página-->
 <head>
 	<title>
 		Portfólio Luize Peres Ferreira
@@ -9,15 +9,16 @@
 	<meta name="author" content="Luize Ferreira - luize.pferreira@gmail.com">
 	<meta name="description" content="Currículo - história - contato - experiência">
 	<meta name="keywords" content="Currículo, curriculo, portfolio">
-	<link rel="shortcut icon" href="img/icon.ico">
-	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
+	<link rel="shortcut icon" href="img/icon.ico">	
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+	<!--Link Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/estilo3.css">
 </head>
-
+<!--Corpo do texto-->
 <body>
 	<main class="geral">
 
-
+		<!--Área para configurar o menu-->
 		<nav class="menu navbar">
 			<ul>
 				<li><a href="#apresentacao">Sobre mim</a></li>
@@ -27,7 +28,7 @@
 
 			</ul>
 		</nav>
-
+		<!--Caixa de apresentação contendo informações pessoais-->
 		<section>
 			<section class="apresentacao" id="apresentacao">
 				<aside class="caixaapresentacao">
@@ -53,13 +54,14 @@
 						<li>Amo fazer doces</li>
 					</ul>
 				</aside>
+				<!--Imagem do perfil-->
 				<figure class="foto">
 					<img src="img/picture.jpg" alt="FotoPerfil">
 				</figure>
 
 			</section>
-
-			<div class="conteudo2" id="conteudo2">
+			<!--Caixa contendo formações-->
+			<section class="conteudo2" id="conteudo2">
 				<h2 class="educacao"> Formação Educacional </h2>
 				<br><br><br>
 				<ul class="formacao">
@@ -67,7 +69,7 @@
 					<li>Ensino Superior em andamento - UNINTER (2021-Atual)</li>
 					<li>Curso de Programação - Fundação Bradesco (Março - Dezembro/2022)</li>
 				</ul>
-				<br><br><br><br><br><br><br><br><br><br>
+				<br>
 				<h2 class="idiomas"> Idiomas </h2>
 				<br><br><br>
 				<ul class="linguas">
@@ -75,9 +77,9 @@
 					<li>Espanhol - Básico</li>
 					<li>Português - Nativo</li>
 				</ul>
-			</div>
+			</section>
 
-
+			<!--Caixa contendo informações profissionais-->
 			<section class="conteudo3" id="conteudo3">
 				<h2 class="portfolio"> Portfólio </h2>
 				<p class="paragrafo2">Experiências Profissionais</p>
@@ -87,14 +89,14 @@
 					<li>Estagiária de suporte na empresa MegaInffo (08/2021 - 03/2022)</li>
 				</ul>
 			</section>
-
+			
+			<!--Caixa contendo formulário de contato-->
 			<section class="conteudo4" id="conteudo4">
 				<h2 class="contato"> Contato </h2>
 				<form class="contac_form" id="forms">
 					<p class="paragrafo">Entre em contato:</p>
 
-					<input type="hidden" name="accessKey" value="10da5604-9ffb-49f1-af6b-c56e8efb5b5c">
-
+					<!--Tabela baseada no Bootstrap-->
 					<input class="name" data-langkey="nome" type="text" class="inpTxt" id="strNome" name="name"
 						placeholder="Nome completo">
 					<br>
@@ -110,38 +112,12 @@
 					<textarea class="message" name="message" placeholder="Mensagem" rows="5" cols="33"></textarea>
 					<p></p>
 					<button class="enviar" onclick="sendMsg()">Enviar</button>
-					<!-- <input class="enviar" type="submit" value="enviar"> -->
 				</form>
-				<script src="https://smtpjs.com/v3/smtp.js"></script>
+				<!--JavaScript para mostrar mensagem na tela-->
 				<script>
-					const form = document.querySelector('.contact_form');
-					//Função para enviar mensagem quando clicar no botão:
-					function sendMsg() {
-						// e.preventDefault();
-
-						const name = document.querySelector('.name');
-						email = document.querySelector('.email');
-						subject = document.querySelector('.subject');
-						message = document.querySelector('.message');
-
-						
-						alert(`Sua mensagem foi enviada`);
-						// // Função enviar email:
-						// Email.send({
-						// 	SecureToken: "365f57ab-fc36-4877-920d-d7283cb34e28",
-						// 	To: 'luize.pferreira@gmail.com',
-						// 	From: email.value,
-						// 	Subject: "Contact Form",
-						// 	Body: message.value
-						// }).then(
-						// 	message => alert(message)
-						// );
-					}
-
-					// Adicionar o evento submit:
-					from.addEventListener('submit', sendMsg);
-
+					alert(`Sua mensagem foi enviada`);
 				</script>
+				<!--Ícones animados direcionando para outra página-->
 				<table>
 					<tr>
 						<td>
@@ -159,7 +135,7 @@
 
 			</section>
 		</section>
-
+		<!--Rodapé contendo direitos autorais-->
 		<footer class="rodape">
 
 			<p>
